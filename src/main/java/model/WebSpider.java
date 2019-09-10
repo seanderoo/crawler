@@ -9,6 +9,8 @@ import java.util.Scanner;
 
 public class WebSpider {
 
+    // JUST A COMMENT
+
     public static void main(String[] args) {
 
         ArrayList<String> urls = cvsToArrayList("bloomreach_bedrijven.csv");
