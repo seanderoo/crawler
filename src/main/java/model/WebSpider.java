@@ -9,12 +9,9 @@ import java.util.Scanner;
 
 public class WebSpider {
 
-    // JUST A COMMENT
-    // AND ANOTHER COMMENT
-
     public static void main(String[] args) {
 
-        ArrayList<String> urls = cvsToArrayList("bloomreach_bedrijven.csv");
+        ArrayList<String> urls = csvToArrayList("bedrijfnamen.txt");
 
         try {
 
@@ -94,7 +91,7 @@ public class WebSpider {
         return amountWebfiles;
     }
 
-    private static ArrayList<String> cvsToArrayList(String csvFile) {
+    private static ArrayList<String> csvToArrayList(String csvFile) {
         ArrayList<String> urlList = new ArrayList<>();
         try {
             File filename = new File(csvFile);
@@ -124,7 +121,4 @@ public class WebSpider {
 
         return urlList;
     }
-
-
-
 }
